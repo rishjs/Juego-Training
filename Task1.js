@@ -4,16 +4,22 @@
      //       ‘12/02/2023’: “WEDNESDAY” } 
 
 let input_arr = new Array();
-input_arr = ["12/02/2023", "11/02/2023", "10/02/2023"] ;
-input_arr1 = ["Monday", "Tuesday", "Wednesday"] ;
-input_arr.reverse();
-
+input_arr = ["1/02/2023", "9/02/2023", "10/02/2023","11/02/2023"] ;
+const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+let day=new Array();
+input_arr.forEach((elem, i) => {
+    const d = new Date(elem);
+    day[i] = weekday[d.getDay()];
+})
 
 const obj = {}
 
-input_arr1.forEach((elem, i) => {
+day.forEach((elem, i) => {
    obj[`${input_arr[i]}`] = elem
 })
 
-console.log(obj)
+ console.log(obj)
+
+
+
 

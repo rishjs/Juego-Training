@@ -1,0 +1,22 @@
+{
+  "name": "juegotraining",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Day1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rishjs/Juego-Training.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rishjs/Juego-Training/issues"
+  },
+  "homepage": "https://github.com/rishjs/Juego-Training#readme",
+  "dependencies": {
+    "validator": "^10.8.0"
+  }
+}

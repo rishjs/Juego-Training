@@ -13,3 +13,10 @@ input_arr.forEach((elem, i) => {
     obj[`${input_arr[i]}`] = elem
 })
  console.log(obj)
+<<<<<<< HEAD
+=======
+
+
+
+
+>>>>>>> bfc8ee6515728aa6621ac5d832337645afd88ff0

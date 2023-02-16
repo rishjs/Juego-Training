@@ -10,7 +10,7 @@ const obj = {}
 input_arr.forEach((elem, i) => {
     const d = new Date(elem);
     day[i] = weekday[d.getDay()];
-    obj[`${input_arr[i]}`] = elem
+    obj[`${input_arr[i]}`] = day[i]
 })
  console.log(obj)
 

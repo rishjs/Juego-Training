@@ -1,3 +1,8 @@
+// From effect field from API[https://wizard-world-api.herokuapp.com/Elixirs], 
+// Find all the data which includes keywords (poison, ringworm, portion, hair)
+// If no data found return empty array 
+// In a string even if poisonous is included that full object should be returned.
+
 const request=require('request');
 const task4=(limit=10,pageNumber=1,callback)=>{
     const url='https://wizard-world-api.herokuapp.com/Elixirs';

@@ -1,5 +1,5 @@
 const request=require('request');
-const geocode=(limit=10,pageNumber=1,callback)=>{
+const task4=(limit=10,pageNumber=1,callback)=>{
     const url='https://wizard-world-api.herokuapp.com/Elixirs';
     request({url,json:true},(error,{body})=>{
         if(error){
@@ -23,7 +23,7 @@ const geocode=(limit=10,pageNumber=1,callback)=>{
 }
 const limit=process.argv[2];
 const pageNumber=process.argv[3];
-  geocode(limit,pageNumber,(error,data)=>{
+  task4(limit,pageNumber,(error,data)=>{
       if(error){
           return console.log(error);
       }

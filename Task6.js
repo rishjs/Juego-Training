@@ -1,3 +1,7 @@
+//  Given the name of elixirs call the https://wizard-world-api.herokuapp.com/Elixirs/{id} from the master data https://wizard-world-api.herokuapp.com/Elixirs
+// If the given name in elixirs is not present then appropriate error message must be returned
+
+
 const request=require('request');
 const task6=(limit=10,pageNumber=1,callback)=>{
     const url='https://wizard-world-api.herokuapp.com/Elixirs';

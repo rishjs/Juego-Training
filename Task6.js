@@ -62,6 +62,6 @@ body.forEach(element => {
 });
 if(flag===0)
 {
- console.log('No data available for this name');
+ console.log(`No data available for "${name}" in this page`);
 }
 }

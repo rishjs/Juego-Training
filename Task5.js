@@ -1,3 +1,7 @@
+// Group all difficulty level in in one object.
+//If difficult level is null then in key NULL the data must be grouped  
+
+
 const request=require('request');
 const geocode=(limit=10,pageNumber=1,callback)=>{
     const url='https://wizard-world-api.herokuapp.com/Elixirs';
@@ -42,11 +46,9 @@ let array=[];
      if(!ObjMap[makeKey]) {
        ObjMap[makeKey] = [];
      }
-
     ObjMap[makeKey].push(Object.assign({},element));
    });
    console.log(ObjMap);
- 
 }
  
  

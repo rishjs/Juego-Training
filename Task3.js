@@ -10,7 +10,7 @@
 const request=require('request');
 const task4=(limit=10,pageNumber=1,callback)=>{
     const url='https://wizard-world-api.herokuapp.com/Elixirs';
-    request({url,json:true},(error,{body})=>{
+    request({url,json:true},(error,{body}={})=>{
         if(error){
             callback('Unable to connect to weather service',undefined)
         }

@@ -28,7 +28,7 @@ const pageNumber=process.argv[3];
           return console.log(error);
       }
       else{
-        for(let i=data.start;i<data.stop;i++)
+        for(let i=data.start-1;i<data.stop;i++)
         {
             console.log(data.body[i]);
         }

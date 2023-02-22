@@ -56,7 +56,7 @@ let keywords=['Advanced','poison', 'ringworm', 'portion', 'hair']
                 {
                     for(let u=0;u<keywords.length;u++){ 
                     if(myArray[k].startsWith(keywords[u])){
-                        array.push({entry:data})
+                        array.push(Object.assign({},data))
                     }
                 }
                 }

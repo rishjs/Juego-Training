@@ -3,7 +3,7 @@
 
 
 const request=require('request');
-const geocode=(limit=10,pageNumber=1,callback)=>{
+const task5=(limit=10,pageNumber=1,callback)=>{
     const url='https://wizard-world-api.herokuapp.com/Elixirs';
     request({url,json:true},(error,{body})=>{
         if(error){
@@ -27,7 +27,7 @@ const geocode=(limit=10,pageNumber=1,callback)=>{
 const limit=process.argv[2];
 const pageNumber=process.argv[3];
 let array=[];
-  geocode(limit,pageNumber,(error,data)=>{
+  task5(limit,pageNumber,(error,data)=>{
       if(error){
           return console.log(error);
       }
@@ -42,7 +42,7 @@ let array=[];
   function groupBy(data1){
   let ObjMap ={};
   data1.forEach(element => {
-    var makeKey = element.difficulty;
+    let makeKey = element.difficulty;
      if(!ObjMap[makeKey]) {
        ObjMap[makeKey] = [];
      }

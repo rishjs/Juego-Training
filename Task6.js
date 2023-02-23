@@ -2,7 +2,12 @@
 // If the given name in elixirs is not present then appropriate error message must be returned
 
 
+//  Given the name of elixirs call the https://wizard-world-api.herokuapp.com/Elixirs/{id} from the master data https://wizard-world-api.herokuapp.com/Elixirs
+// If the given name in elixirs is not present then appropriate error message must be returned
+
+
 const request=require('request');
+const url='https://wizard-world-api.herokuapp.com/Elixirs';
 let flag=0;
 const readline = require("readline");
 const rl = readline.createInterface({
@@ -13,7 +18,7 @@ let name = "";
 rl.question("Enter the name\n", function (string) {
   name = string;
   let array=[];
-  const url='https://wizard-world-api.herokuapp.com/Elixirs';
+ 
     request({url,json:true},(error,{body}={})=>{
         if(error){
             callback('Unable to connect to weather service',undefined)
@@ -33,7 +38,15 @@ body.forEach(element => {
 
     let newName = element.name;  
      if(newName===name){
-        console.log(element);
+      const url2=url+element.id;
+      request({url:url2,json:true},(error,{body}={})=>{
+          if(error){
+              callback('Unable to connect to weather service',undefined)
+          }
+          else{
+            console.log(element)
+          }
+      })
         flag=1;
         return;
      }

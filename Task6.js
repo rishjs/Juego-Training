@@ -1,15 +1,6 @@
 //  Given the name of elixirs call the https://wizard-world-api.herokuapp.com/Elixirs/{id} from the master data https://wizard-world-api.herokuapp.com/Elixirs
 // If the given name in elixirs is not present then appropriate error message must be returned
 
-
-//  Given the name of elixirs call the https://wizard-world-api.herokuapp.com/Elixirs/{id} from the master data https://wizard-world-api.herokuapp.com/Elixirs
-// If the given name in elixirs is not present then appropriate error message must be returned
-
-
-//  Given the name of elixirs call the https://wizard-world-api.herokuapp.com/Elixirs/{id} from the master data https://wizard-world-api.herokuapp.com/Elixirs
-// If the given name in elixirs is not present then appropriate error message must be returned
-
-
 const request=require('request');
 const url='https://wizard-world-api.herokuapp.com/Elixirs';
 let flag=0;

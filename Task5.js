@@ -4,7 +4,6 @@
 
 const request=require('request');
 let array=[];
-let keywords=['Advanced','poison', 'ringworm', 'portion', 'hair']
     const url='https://wizard-world-api.herokuapp.com/Elixirs';
     request({url,json:true},(error,{body}={})=>{
         if(error){

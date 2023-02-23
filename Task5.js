@@ -9,9 +9,6 @@ const task5=(limit=10,pageNumber=1,callback)=>{
         if(error){
             callback('Unable to connect to weather service',undefined)
         }
-        else if(body.error){
-            callback('Unable to find the location',undefined)
-        }
         else{
             let start=(pageNumber*limit)-(limit-1);
             let stop=pageNumber*limit;

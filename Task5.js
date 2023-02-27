@@ -7,7 +7,7 @@ let array=[];
     const url='https://wizard-world-api.herokuapp.com/Elixirs';
     request({url,json:true},(error,{body}={})=>{
         if(error){
-            console.log('Unable to connect to weather service')
+            console.log('Unable to connect')
         }
 
         else{

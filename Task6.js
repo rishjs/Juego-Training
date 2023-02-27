@@ -9,7 +9,7 @@ let name = "Fergus Fungal Budge";
   let array=[];
    request({url,json:true},(error,{body}={})=>{
         if(error){
-          console.log('Unable to connect to weather service')
+          console.log('Unable to connect')
         }
         else{
           for(let i=0;i<body.length;i++)
@@ -28,7 +28,7 @@ await body.forEach(element => {
       const url2=`https://wizard-world-api.herokuapp.com/Elixirs/${element.id}`;
        request({url:url2,json:true},(error,{body}={})=>{
           if(error){
-              console.log('Unable to connect to weather service')
+              console.log('Unable to connect')
           }
           else{
             console.log(body)
